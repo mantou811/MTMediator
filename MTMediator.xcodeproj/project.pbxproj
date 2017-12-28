@@ -14,6 +14,7 @@
 		8D32B4611FF4B470009D97A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D32B45F1FF4B470009D97A8 /* LaunchScreen.storyboard */; };
 		8D32B4641FF4B470009D97A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32B4631FF4B470009D97A8 /* main.m */; };
 		8D32B46E1FF4B470009D97A8 /* MTMediatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32B46D1FF4B470009D97A8 /* MTMediatorUITests.m */; };
+		8D32B47B1FF4B4AC009D97A8 /* MTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32B4791FF4B4AB009D97A8 /* MTMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8D32B4691FF4B470009D97A8 /* MTMediatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTMediatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D32B46D1FF4B470009D97A8 /* MTMediatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMediatorUITests.m; sourceTree = "<group>"; };
 		8D32B46F1FF4B470009D97A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D32B4791FF4B4AB009D97A8 /* MTMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMediator.m; sourceTree = "<group>"; };
+		8D32B47A1FF4B4AC009D97A8 /* MTMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMediator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		8D32B4531FF4B470009D97A8 /* MTMediator */ = {
 			isa = PBXGroup;
 			children = (
+				8D32B4781FF4B498009D97A8 /* MTMediator */,
 				8D32B4541FF4B470009D97A8 /* AppDelegate.h */,
 				8D32B4551FF4B470009D97A8 /* AppDelegate.m */,
 				8D32B4571FF4B470009D97A8 /* ViewController.h */,
@@ -101,6 +105,15 @@
 				8D32B46F1FF4B470009D97A8 /* Info.plist */,
 			);
 			path = MTMediatorUITests;
+			sourceTree = "<group>";
+		};
+		8D32B4781FF4B498009D97A8 /* MTMediator */ = {
+			isa = PBXGroup;
+			children = (
+				8D32B47A1FF4B4AC009D97A8 /* MTMediator.h */,
+				8D32B4791FF4B4AB009D97A8 /* MTMediator.m */,
+			);
+			path = MTMediator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +221,7 @@
 				8D32B4591FF4B470009D97A8 /* ViewController.m in Sources */,
 				8D32B4641FF4B470009D97A8 /* main.m in Sources */,
 				8D32B4561FF4B470009D97A8 /* AppDelegate.m in Sources */,
+				8D32B47B1FF4B4AC009D97A8 /* MTMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +372,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC98KGCJN9;
 				INFOPLIST_FILE = MTMediator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Long.MTMediator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,7 +387,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC98KGCJN9;
 				INFOPLIST_FILE = MTMediator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Long.MTMediator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
